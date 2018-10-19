@@ -1,0 +1,151 @@
+.modal
+	display: none
+	position: fixed
+
+	box-sizing: border-box
+	
+	background-color: #fff
+	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75)
+.modal-show
+	display: block
+	z-index: 3
+
+	animation-name: slide
+	animation-duration: 0.6s
+.modal-error
+	animation-name: shake
+	animation-duration: 0.6s
+.modal-write
+	padding: 68px 100px 84px 100px
+
+	top: 220px
+	left: 50%
+	margin-left: -480px
+	
+	width: 960px
+.modal-write-title
+	margin: 0
+
+	margin-bottom: 40px
+
+	font-size: 45px
+	font-weight: 500
+	line-height: 45px
+.modal-write-form
+	p
+		margin: 0
+	label
+		display: block
+		margin: 0
+		margin-bottom: 8px
+
+		font-size: 16px
+		font-weight: 700
+		line-height: 18px
+	input
+		margin-right: 40px
+
+		outline: none
+		font: inherit
+
+		border-radius: 2px
+		border: 2px solid #d7dcde
+	input[type="text"],
+	input[type="email"]
+		padding: 12px 16px
+
+		margin-bottom: 30px
+
+		width: 360px
+
+		font: inherit
+		color: #444444
+
+		box-sizing: border-box
+	input:hover
+		border-color: #b4b9bb
+	input:focus,
+	input:active
+		border-color: #000
+	input:invalid
+		border-color: #e74246
+	textarea
+		margin-bottom: 45px
+		padding: 10px 15px
+		width: 760px
+		outline: none
+
+		font: inherit
+		color: #444444
+
+		box-sizing: border-box
+
+		border-radius: 2px
+		border: 2px solid #d7dcde
+	textarea:hover
+		border-color: #b4b9bb
+	textarea:focus,
+	textarea:active
+		border-color: #000
+.modal-write-button
+	padding: 18px 82px
+
+	cursor: pointer
+.modal-write-close
+	position: absolute
+	top: 78px
+	right: 90px
+	width: 21px
+	height: 21px
+
+	font-size: 0
+
+	border: 0
+
+	cursor: pointer
+	background-color: transparent
+.modal-write-close::before,
+.modal-write-close::after
+	content: ""
+
+	position: absolute
+	top: -3px
+	right: 9px
+	
+	width: 3px
+	height: 27px
+
+	background-color: #fecccd
+
+.modal-write-close::before
+	transform: rotate(45deg)
+.modal-write-close::after
+	transform: rotate(-45deg)
+.modal-write-close:hover::before,
+.modal-write-close:hover::after
+	background-color: #fb565a
+.modal-write-close:active::before,
+.modal-write-close:active::after
+	background-color: #ffeeee
+.modal-write-close:active
+	outline: none
+.modal-wrap
+	display: flex
+// анимация формы
+@keyframes slide
+ 0%
+  transform: translateY(2000px)
+ 70%
+  transform: translateY(30px)
+ 90%
+  transform: translateY(-10px)
+ 100%
+  transform: translateY(0)
+// анимация инпута
+@keyframes shake
+	0%, 100%
+		transform: translateX(0)
+	10%, 30%, 50%, 70%, 90%
+	 transform: translateX(-10px)
+	20%, 40%, 60%, 80%
+	 transform: translateX(10px)

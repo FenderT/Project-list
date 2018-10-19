@@ -1,0 +1,133 @@
+// о нас
+.about-columns
+	display: flex
+	align-items: flex-end
+	justify-content: space-between
+
+	margin-bottom: 77px
+.about-us
+	padding-top: 80px
+	width: 700px
+.title-wrap
+	margin: 0
+.about-us-title
+	display: block
+	margin: 0
+	margin-bottom: 25px
+
+	width: 660px
+	font-size: 45px
+	font-weight: 500
+	line-height: 45px
+.about-us-desc
+	margin: 0
+	margin-bottom: 35px
+	width: 660px
+.about-us-header
+	font-weight: 700
+	text-transform: uppercase
+.about-us-list
+	margin: 0
+	margin-top: 25px
+	padding: 0
+
+	list-style: none
+.about-us-items
+	position: relative
+	
+	margin-bottom: 25px
+	padding-left: 40px
+	line-height: 24px
+	color: #283136
+.about-us-items:last-child
+	margin-bottom: 0
+.about-us-items::before
+	content: ""
+
+	position: absolute
+	top: 12px
+	left: 1px
+
+	width: 25px
+	height: 2px
+	background-color: #fb565a
+//наша статистика
+.us-statistic
+	width: 360px
+.us-statistic-title
+	display: block
+	
+	margin-top: 35px
+	margin-bottom: 40px
+	font-weight: 700
+	text-transform: uppercase
+.us-statistic-list
+	display: flex
+	margin: 0
+	padding: 0
+
+	list-style: none
+	li
+		line-height: 18px
+
+		color: #283136
+	span
+		display: block
+		
+		margin-bottom: 27px
+
+		font-size: 45px
+		font-weight: 700
+		sup
+			font-size: 25px	
+// наши партнёры
+.partners
+	padding-top: 45px
+	border-top: 2px solid #eeeeee
+	padding-bottom: 45px
+	border-bottom: 2px solid #eeeeee
+	margin-bottom: 80px
+.partners-list
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	align-items: center
+
+	margin: 0
+	padding: 0
+
+	text-align: center
+	
+	list-style: none
+.partners-items
+	display: flex
+	align-items: center
+	justify-content: center
+	
+	position: relative
+
+
+	width: 260px
+
+	min-height: 90px
+
+	img
+		opacity: 0.2
+	img:hover
+		opacity: 1
+	img:focus,
+	img:active
+		opacity: 0.1
+.partners-items::after
+	content: ""
+
+	position: absolute
+	
+	width: 2px
+	height: 52px
+
+	right: -16px
+
+	background-color: #eee
+.partners-items:nth-child(4n)::after
+	display: none

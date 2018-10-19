@@ -1,0 +1,228 @@
+.shop
+	background-color: #f9f6f3
+	background: url(../img/information/information-bg.jpg)
+	background-position: 0 0
+	background-repeat: repeat
+.page-title
+	margin-bottom: 19px
+	margin: 0
+	padding: 0
+	font-size: 30px
+	line-height: 42px
+.breadcrumbs
+	display: flex
+	justify-content: flex-start
+	flex-wrap: wrap
+
+	margin: 0
+	padding: 0
+	list-style: none
+
+	margin-bottom: 50px
+	li
+		position: relative
+		margin-right: 42px
+	li::after
+		content: ""
+
+		position: absolute
+		top: 7px
+		right: -25px
+		
+		width: 8px
+		height: 8px
+
+		background-color: $dark-font
+
+		transform: rotate(45deg)
+	li:last-child
+		margin-right: 0
+	a
+		color: $dark-font
+	a:hover,
+	a:focus
+		text-decoration: underline
+	&-curent::after
+		display: none
+		
+
+.catalog-columns
+	display: flex
+	justify-content: space-between
+.filter
+	width: 180px
+	fieldset
+		margin: 0
+		padding: 0
+		margin-bottom: 30px
+		border: none
+	fieldset:first-child
+		margin-bottom: 35px
+	legend
+		margin-bottom: 26px
+
+		font-size: 24px
+		line-height: 30px
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+
+		line-height: 18px
+	&-option
+		margin-bottom: 19px
+		padding-left: 45px
+	label
+		position: relative
+		display: block
+		
+		cursor: pointer
+		user-select: none
+.filter-input-checkbox + label::before
+	content: ""
+
+	position: absolute
+	top: 0
+	left: -45px
+
+	width: 16px
+	height: 16px
+	border: 2px solid $dark-font
+.filter-input-checkbox:checked + label::after
+	content: ""
+
+	position: absolute
+	top: 4px
+	left: -41px
+
+	width: 12px
+	height: 12px
+	
+	background-image: url(../img/shop/cross.svg)
+	background-position: 0 0
+	background-repeat: no-repeat
+.filter-input:hover + label,
+.filter-input:focus + label
+	color: #663d15
+.filter-input:disabled + label
+	color: $dark-font
+	opacity: 0.5
+.filter-input-radio + label::before
+	content: ""
+
+	position: absolute
+	top: -1px
+	left: -45px
+
+	width: 16px
+	height: 16px
+	
+ border: 2px solid $dark-font
+ border-radius: 50%
+.filter-input-radio:checked + label::after
+	content: ""
+
+	position: absolute
+	top: 5px
+	left: -39px
+	width: 8px
+	height: 8px
+
+	background-color: $dark-font
+	border-radius: 50%
+.catalog
+	width: 700px
+.catalog-list
+	display: flex
+	flex-wrap: wrap
+	margin: 0
+	padding: 0
+	margin-bottom: 45px
+	list-style: none
+
+.catalog-item
+	width: 220px
+	margin-right: 20px
+	margin-bottom: 20px
+	background-color: #f8f8f8
+	box-shadow: 0 0 15px rgba(0, 1, 1, 0.2)
+	a
+		display: flex
+		flex-direction: column
+		color: $dark-font
+	h3
+		order: 1
+		margin: 17px 15px 12px 16px
+
+		font-size: 14px
+		line-height: 18px
+.catalog-item:hover
+	box-shadow: 3px 4px 25px rgba(0, 1, 1, 0.3)
+.catalog-item:nth-child(3n)
+	margin-right: 0
+.catalog-item-category
+	display: block
+	text-transform: none
+.catalog-item-image
+	width: 220px
+	height: 165px
+	margin: 0
+.catalog-item-price
+	display: flex
+	margin: 15px
+	margin-top: 0
+	b
+		width: 112px
+		padding: 13px 25px 11px
+
+		font-size: 14px
+		line-height: 18px
+		text-align: center
+		background-color: #e6e6e6
+.catalog-item-price .button
+	width: 50px
+	padding: 13px 18px 11px
+	margin-right: 0
+	color: $light-font
+	line-height: 18px
+.catalog-item-price .button:hover
+	color: $dark-font
+.pagination-list
+	display: flex
+	flex-wrap: wrap
+	padding: 0
+	margin: 0
+	list-style: none
+.pagination-item
+	margin-right: 5px
+.pagination-item:last-child
+	margin-right: 0
+.pagination-link
+	display: block
+	padding: 10px 19px
+	color: $light-font
+	background-color: $dark-font
+.pagination-link:hover,
+.pagination-link:focus,
+.pagination-link:active
+	background-color: #663d15
+		
+.pagination-current
+	color: $dark-font
+	background-color: $light-font
+.pagination-current a:hover,
+.pagination-current a:focus,
+.pagination-current a:active
+	color: $dark-font
+	background-color: $light-font
+
+.shop .main-header
+	margin-bottom: 50px
+.shop .main-navigation
+	align-items: flex-start
+	flex-direction: row
+.shop .main-user-navigation
+	margin-left: auto
+
+.shop .main-footer
+	margin-top: 45px

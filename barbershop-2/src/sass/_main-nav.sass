@@ -1,0 +1,75 @@
+.main-navigation
+	display: flex
+	flex-direction: column
+	align-items: center
+	font-size: 16px
+	line-height: 20px
+	color: $light-font
+	background-color: $dark-font
+.main-navigation-logo
+	padding: 0
+	margin: 0
+.main-site-navigation
+	display: flex
+	flex-wrap: wrap
+	width: 700px
+
+.main-user-navigation
+	display: flex
+.main-logo-navigation
+	margin: 0
+	padding: 0
+
+.main-user-navigation .main-user-link
+	position: relative
+	padding-left: 50px
+	width: 140px
+.main-user-link::before
+	content: ""
+	position: absolute
+	top: 27px
+	left: 24px
+	width: 16px
+	height: 16px
+
+	background: url(../img/main-nav/login.svg)
+	background-repeat: no-repeat
+	background-position: 0 0
+
+	opacity: 0.3
+
+.main-user-link:hover::before,
+.main-user-link:focus::before,
+.main-user-link:active::before
+	opacity: 1
+.main-site-navigation,
+.main-user-navigation
+	list-style: none
+	margin: 0
+	padding: 0
+.main-site-navigation__wrapper
+	width: 100%
+	background-color: $dark-font
+.main-site-navigation__wrapper .container
+	display: flex
+	justify-content: space-between
+.main-site-navigation a,
+.main-user-navigation a
+	padding: 25px 20px
+	vertical-align: middle
+	display: block
+	color: $light-font
+
+.main-site-navigation a:hover,
+.main-site-navigation a:focus,
+.main-user-navigation a:hover,
+.main-user-navigation a:focus
+	background-color: #242424
+
+.main-header
+	margin-bottom: 60px
+
+.container
+	width: 940px
+	margin: 0 auto
+	padding: 0 10px

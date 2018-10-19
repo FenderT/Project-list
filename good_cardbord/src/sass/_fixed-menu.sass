@@ -1,0 +1,29 @@
+.fixed-menu
+	display: flex
+	align-items: center
+	position: fixed
+	width: 100%
+	max-height: 44px
+	text-align: center
+	background-color: $text-color-dark
+	z-index: 100
+	&_list
+		padding-left: 0
+		margin-left: 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&_item
+		display: flex
+		list-style-type: none
+	&_link
+		font-size: 12px
+		font-weight: 400
+		text-transform: uppercase
+		text-decoration: none
+		color: $text-color-light
+		transition: all 0.2s
+	&_link:hover
+		color: $button-color
+	&_dot
+		list-style-type: none

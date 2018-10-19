@@ -1,0 +1,89 @@
+.header
+	display: flex
+	&-logo
+		background: url(../img/header/header-logo.png) center no-repeat
+		width: 191px
+		height: 61px
+	padding-top: 57px
+	padding-bottom: 15px
+	&-contacts
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		&__phone
+			margin-right: 13px
+			font-size: 22px
+			font-weight: 400
+			color: $text-color-dark
+			&s
+				display: flex
+			&:first-child
+				border-right: 1px solid #cfcfd0
+				padding-right: 13px
+
+	.mobile-menu
+		&__link
+			width: 23px
+			height: 17px
+		&_span, .mobile-menu_span:before, .mobile-menu_span:after
+			display: block
+			position: absolute
+			width: 23px
+			height: 3px
+			background-color: $text-color-dark
+		&_span:before
+			content: ''
+			margin-top: -7px
+			transition: all 0.2s
+	 &_span:after
+	 	content: ''
+	  margin-top: 7px
+	  transition: all 0.2s
+	 &_active
+	 	.mobile-menu_span
+	 		background-color: transparent
+			.mobile-menu_span:before
+				content: ''
+				margin-top: 0px
+				transform: rotate(135deg)
+			.mobile-menu_span:after
+				content: ''
+				margin-top: 0px
+				transform: rotate(-135deg)
+	 &__roster
+	 &__list
+	 	left: -100%
+	 	display: flex
+	 	justify-content: space-around
+	 	align-items: center
+	 	flex-direction: column
+	 	width: 80%
+	 	height: 100%
+	 	top: 39px
+	 	margin-left: 0
+	 	padding-left: 0
+	 	position: fixed
+	 	background-color: $text-color-dark
+	 	transition: all 0.2s
+	 	z-index: 1003
+	 &_none
+	 	left: 0
+	 	transition: all 0.2s
+	 &__point
+	 	width: 100%
+	 	text-align: center
+	 	list-style-type: none
+		&__derection
+			display: block
+			width: 100%
+			font-size: 15px
+			font-weight: 400
+			text-transform: uppercase
+			text-decoration: none
+			color: $text-color-light
+			transition: all 0.2s
+		&__derection:hover
+			background-color: rgba(255, 255, 255, 0.3)
+			color: $button-color
+			
+

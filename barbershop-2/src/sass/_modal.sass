@@ -1,0 +1,154 @@
+.modal
+	
+	position: fixed
+	
+	background-color: #f7f4f1
+	background: url(../img/information/information-bg.jpg)
+	background-position: 0 0
+	background-repeat: repeat
+
+	box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75)
+ &-login
+ 	display: none
+
+ 	top: 120px
+ 	left: 50%
+ 	margin-left: -230px
+ 	
+
+		width: 300px
+		padding: 50px 80px
+	&-title
+		margin: 0
+		margin-bottom: 20px
+		font-size: 30px
+		line-height: 42px
+	&-hint
+		margin: 0
+		margin-bottom: 10px
+.modal-login-form
+	p
+		margin: 0
+		margin-bottom: 10px
+	input[type="text"],
+	input[type="password"]
+		box-sizing: border-box
+		width: 300px
+		padding: 10px 16px
+		padding-right: 50px
+		font: inherit
+		color: $dark-font
+		text-transform: uppercase
+	 background-color: #f9f6f3
+	 border: 2px solid #000101
+.modal-login-form input:focus
+	border-color: #663d15
+.modal-login-checkbox
+	position: relative
+
+	padding-left: 30px
+
+	cursor: pointer
+.modal-login-checkbox input[type="checkbox"] + .checkbox-indicator
+	position: absolute
+	top: 0
+	left: 0
+
+	width: 17px
+	height: 17px
+
+	border: 2px solid #000101
+.modal-login-checkbox input[type="checkbox"]:focus + .checkbox-indicator
+	border-color: #663d15
+	outline: thin dotted
+	outline: 5px auto
+.modal-login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.modal-login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after
+	content: ""
+
+	position: absolute
+	width: 15px
+	height: 2px
+	top: 8px
+	left: 1px
+
+	background-color: $dark-font
+.modal-login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before
+	transform: rotate(45deg)
+.modal-login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after
+	transform: rotate(-45deg)
+.modal-login-checkbox:hover,
+.modal-login-checkbox:focus
+	color: #663d15
+.modal-login-form .modal-login-info
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+	margin: 15px 0
+
+.modal-login-user
+	background-image: url(../img/modal/user.svg)
+	background-position: 270px center
+	background-repeat: no-repeat
+	
+.modal-login-password
+	background-image: url(../img/modal/lock.svg)
+	background-position: 270px center
+	background-repeat: no-repeat
+.restore
+	color: $dark-font
+	text-decoration: underline
+.restore:hover,
+.restore:focus
+	text-decoration: none
+.modal-login-button
+	width: 100%
+	margin-right: 0
+.modal-close
+	position: absolute
+	top: 10px
+	right: -34px
+	width: 22px
+	height: 22px
+
+	font-size: 0
+
+	border: 0
+
+	cursor: pointer
+	background-color: transparent
+.modal-close::before,
+.modal-close::after
+	content: ""
+
+	position: absolute
+	top: 2px
+	left: 2px
+
+	width: 19px
+	height: 3px
+
+	background-color: #d0d0d0
+.modal-close::before
+	transform: rotate(45deg)
+.modal-close::after
+	transform: rotate(-45deg)
+
+// modal map
+.modal-map
+	display: none
+	
+	p
+		margin: 0
+	top: 50%
+	left: 50%
+
+	margin-top: -280px
+	margin-left: -390px
+
+	width: 766px
+	height: 561px
+
+	border: 7px solid white
+	box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75)
