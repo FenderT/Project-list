@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+		<title>Барбершоп «Бородинский»</title>
+	</head>
+	<body>
+
+		<header class="page-header">
+			<a class="page-header__logo" href="#">
+				<img class="page-header__logo-image" src="#" width="226" height="30" alt="Логотип Барбершоп «Бородинский»">
+			</a>
+
+			<nav class="main-nav">
+				<button class="main-nav__toggle" type="button">открыть меню</button>
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item site-list__item--active">
+							<a>главная</a>
+						</li>
+						<li class="site-list__item">
+							<a href="photo.html">наши работы</a>
+					</li>
+						<li class="site-list__item">
+							<a href="form.html">записаться</a>
+					</li>
+						<li class="site-list__item">
+							<a href="№">контакты</a>
+					</li>
+						<li class="site-list__item">
+							<a href="#">html academy</a>
+					</li>
+					</ul>
+					<ul class="main-nav__list user-list">
+						<li class="user-list__item">
+							<a href="login.html" class="user-list__login">войти</a>
+					</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main class="page-form">
+			<h1 class="visually-hidden">Запись к нам на стрижку</h1>
+			<section class="record">
+				<h2 class="record__title">запись на стрижку</h2>
+				<a class="record__link button" href="index.html">на главную</a>
+				<form class="record__form" action="https://echo.htmlacademy.ru" method="get">
+					<input class="record__input" type="text" name="last-name" placeholder="Фамилия">
+
+					<input class="record__input" type="text" name="name" placeholder="Имя">
+
+					<input class="record__input" type="text" name="second-name" placeholder="Отчество">
+
+					<input class="record__input" type="text" name="phone" placeholder="Контактный телефон">
+
+					<input class="record__input" type="email" name="email" placeholder="Контактный e-mail">
+					<textarea class="record__text-area" name="user-text" cols="30" rows="6" placeholder="Доп. информация для мастера"></textarea>
+					<fieldset class="record__field">
+						<legend class="record__legend">
+							выберите модель бороды:
+						</legend>
+						<ul class="record__services">
+							<li class="record__services-item">
+								<input class="record__services-input" id="admiral" value="admiral" name="beard-type" type="radio">
+								<label class="record__services-label record__services-label--picture" for="admiral">адмирал</label>
+							</li>
+
+							<li class="record__services-item">
+								<input class="record__services-input" id="lumberjack" name="beard-type" value="lumberjack" type="radio">
+								<label class="record__services-label" for="lumberjack">лесоруб</label>
+							</li>
+
+							<li class="record__services-item">
+								<input class="record__services-input" id="polar" name="beard-type" value="polar" type="radio">
+								<label class="record__services-label" for="polar">полярник</label>
+							</li>
+
+							<li class="record__services-item">
+								<input class="record__services-input" id="boyar" name="beard-type" value="boyar" type="radio">
+								<label class="record__services-label" for="boyar">боярин</label>
+							</li>
+
+							<li class="record__services-item">
+								<input class="record__services-input" id="sage" name="beard-type" value="sage" type="radio">
+								<label class="record__services-label" for="sage">мудрец</label>
+							</li>
+
+						</ul>
+					</fieldset>
+					<fieldset class="record__field">
+						<legend class="record__legend">
+							дополнительные услуги:
+						</legend>
+						<ul class="record__extra-list">
+
+							<li class="record__extra-item">
+								<input class="record__extra-input" id="tint-beard" name="tint-beard" value="tint-beard" type="checkbox">
+								<label class="record__extra-label" for="tint-beard">
+									Подкрасить бороду
+								</label>
+							</li>
+
+							<li class="record__extra-item">
+								<input class="record__extra-input" id="wind-the-mustache" name="wind-the-mustache" value="wind-the-mustache" type="checkbox">
+								<label class="record__extra-label" for="wind-the-mustache">
+									Накрутить усы
+								</label>
+							</li>
+
+							<li class="record__extra-item">
+								<input class="record__extra-input" id="comb-a-beard" name="comb-a-beard" value="comb-a-beard" type="checkbox">
+								<label class="record__extra-label" for="comb-a-beard">
+									Причесать бороду
+								</label>
+							</li>
+
+							<li class="record__extra-item">
+								<input class="record__extra-input" id="trim-the-whiskey" name="trim-the-whiskey" value="trim-the-whiskey" type="checkbox">
+								<label class="record__extra-label" for="trim-the-whiskey">
+									Подровнять виски
+								</label>
+							</li>
+
+							<li class="record__extra-item">
+								<input class="record__extra-input" id="remove-gray-hair" name="remove-gray-hair" value="remove-gray-hair" type="checkbox">
+								<label class="record__extra-label" for="remove-gray-hair">
+									Убрать седину
+								</label>
+							</li>
+
+							<li class="record__extra-item">
+								<input class="record__extra-input" id="polish-bald-spot" name="polish-bald-spot" value="polish-bald-spot" type="checkbox">
+								<label class="record__extra-label" for="polish-bald-spot">
+									Отполировать лысину
+								</label>
+							</li>
+
+						</ul>
+
+					</fieldset>
+					<button class="record__extra-button button" type="submit">отправить заявку</button>
+
+				</form>
+
+			</section>
+
+		</main>
+
+		<footer class="page-footer">
+			<div class="page-footer__wrapper">
+				<div class="page-footer__contacts contacts">
+					<b class="contacts__title">Барбершоп Бородинский</b>
+					<p class="contacts__text">
+						г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
+						<a class="contacts__phone" href="tel:+78125556666">
+							<span class="contacts__phone-mobile">тел.:</span>
+							+7 (812) 555-66-66
+						</a>
+					</p>
+				</div>
+				<div class="page-footer__social social">
+					<b class="social__title">Давайте дружить!</b>
+					<ul class="social__list">
+				
+						<li class="social__item">
+							<a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+						</li>
+				
+						<li class="social__item">
+							<a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+						</li>
+				
+						<li class="social__item">
+							<a class="social__link social__link--instagram" href="#">Мы в Инстаграмме</a>
+						</li>
+				
+					</ul>
+				</div>
+				
+				<div class="page-footer__copyright copyright">
+					<b class="copyright__text">Разработано:</b>
+					<a class="copyright__link button" href="#">html academy</a>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
