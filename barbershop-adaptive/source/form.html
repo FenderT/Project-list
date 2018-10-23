@@ -189,5 +189,50 @@
 			</div>
 		</footer>
 
+		<section class="modal modal-login">
+			<h2 class="modal-login__title">личный кабинет</h2>
+			<p class="modal-login__hint">
+				Введите свой логин и пароль, чтобы войти
+			</p>
+			<form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
+				<p class="modal-login__wrapper">
+					<input class="modal-login__input modal-login__input--login" name="login" type="text" placeholder="Логин">
+					<input class="modal-login__input modal-login__input--password" name="password" type="password" placeholder="Пароль">
+				</p>
+				<p class="modal-login__info">
+					<label class="madal-login__label" for="remember">
+						<input class="modal-login__checkbox visually-hidden" id="remember" name="remember" type="checkbox">
+						<span class="modal-login__checkbox-indicator"></span>
+						запомните меня
+					</label>
+					<a class="modal-login__link" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="modal-login__button button" type="submit">войти в личный кабинет</button>
+			</form>
+			<button class="modal-login__close" type="button">закрыть</button>
+		</section>
+
+		<section class="modal modal-succes">
+			<p class="modal-succes__wrapper">
+				<b class="modal-succes__title">это успех!</b>
+				<p class="modal-succes__text">
+					Ваша заявка отправлена. 
+					Ожидайте, мы свяжемся с вами как только 
+					будет минутка.
+				</p>
+			</p>
+			<button class="modal-succes__button button" type="button">закрыть окно</button>
+		</section>
+
+		<section class="modal modal-fail">
+			<p class="modal-fail__wrapper">
+				<b class="modal-fail__title">неудача</b>
+				<p class="modal-fail__text">
+					Что-то пошло не так. Проверьте выделенные красным поля формы.
+				</p>
+			</p>
+			<button class="modal-fail__button button" type="button">ok</button>
+		</section>
+
 	</body>
 </html>
