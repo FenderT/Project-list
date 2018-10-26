@@ -9,6 +9,139 @@
 		<title>Вязание на заказ</title>
 	</head>
 	<body>
+
+		<header class="page-header">
+			<nav class="main-nav">
+				<a class="main-nav__logo">
+					<img class="main-nav__logo-img" src="#" width="86" height="35" alt="Логотип Мишка">
+				</a>
+				<button class="main-nav__toggle" type="button">
+					открыть меню
+				</button>
+				<div class="main-nav__wrapper">
+
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item">
+							<a class="site-list__link" href="catalog.html">Каталог товаров</a>
+						</li>
+						<li class="site-list__item">
+							<a class="site-list__link" href="form.html">Вязание на заказ</a>
+						</li>
+					</ul>
+
+					<ul class="main-nav__list user-search">
+						<li class="user-search__item">
+							<a class="user-search__link" href="#">Поиск по сайту</a>
+						</li>
+					</ul>
+
+					<ul class="main-nav__list user-basket">
+						<li class="user-basket__item">
+							<a class="user-basket__link" href="#">
+								Корзина: пока пуста
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+		</header>
+
+		<main class="page-form">
+
+			<ul class="page-main__list breadcrumbs">
+				<li class="breadcrumbs__items">
+					<a class="breadcrumbs__link" href="#">Новые поступления</a>
+				</li>
+				<li class="breadcrumbs__items">
+					<a class="breadcrumbs__link" href="#">Распродажа</a>
+				</li>
+				<li class="breadcrumbs__items">
+					Бесплатная доставка по России
+				</li>
+			</ul>
+
+			<h1 class="page-form__title">
+				Вязание на заказ
+			</h1>
+
+			<section class="form">
+				<p class="form__description">
+					Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+				</p>
+
+				<form class="form__order order" action="#" method="get">
+
+					<fieldset class="order__fieldset">
+						<legend class="order__legend">тип</legend>
+						<input class="order__type" id="interior" name="Interior accessories" value="Interior accessories" type="radio">
+						<label class="order__label" for="interior">Аксессуар для интерьера</label>
+						<input class="order__type" id="kids-toy" name="Children's toy" value="Children's toy" type="radio">
+						<label class="order__label" for="kids-toy">Детская игрушка</label>
+					</fieldset>
+
+					<fieldset class="order__fieldset">
+						<legend class="order__legend">
+							<input class="order__type" id="white" name="white" value="white" type="checkbox">
+							<label class="order__label" for="white">Белый</label>
+							<input class="order__type" id="grey" name="grey" value="grey" type="checkbox">
+							<label class="order__label" for="grey">Серый</label>
+							<input class="order__type" id="tifany" name="tifany" value="tifany" type="checkbox">
+							<label class="order__label" for="tifany">«Тиффани»</label>
+							<input class="order__type" id="black" name="black" value="black" type="checkbox">
+							<label class="order__label" for="black">Черный</label>
+							<input class="order__type" id="pink" name="pink" value="pink" type="checkbox">
+							<label class="order__label" for="pink">Розовый</label>
+							<input class="order__type" id="orange" name="orange" value="orange" type="checkbox">
+							<label class="order__label" for="orange">Оранжевый</label>
+						</legend>
+					</fieldset>
+
+					<fieldset class="order__fieldset">
+						<legend class="order__legend">фио</legend>
+
+						<label class="order__label" for="name">Имя:</label>
+						<input class="order__type" id="name" name="name" type="text" placeholder="Введите ваше имя*">
+
+						<label class="order__label" for="last-name">Фамилия:</label>
+						<input class="order__type" id="last-name" name="last-name" type="text" placeholder="Укажите фамилию*">
+
+						<label class="order__label" for="second-name">Отчество:</label>
+						<input class="order__type" id="second-name" name="second-name" type="text" placeholder="Отчество, если желаете">
+					</fieldset>
+
+				</form>
+			</section>
+
+		</main>
+
+		<footer class="page-footer">
+
+			<div class="page-footer__logo">
+				<img class="page-footer__logo-image" width="102" height="34" src="#" alt="Логотип Мишка">
+			</div>
+
+			<div class="page-footer__social">
+
+				<ul class="page-footer__list social-list">
+
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--instagram" href="#">мы в инстаграмме</a>
+					</li>
+
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--facebook" href="#">мы в фейсбуке</a>
+					</li>
+
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--twitter" href="#">мы в твиттере</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright">
+				<b class="page-footer__dev page-footer__dev--icon">Разработано</b>
+			</div>
+		</footer>
 		
 	</body>
 </html>
