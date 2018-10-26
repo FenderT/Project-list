@@ -8,8 +8,188 @@
 		<link rel="icon" href="../../../../favicon.ico">
 		<title>Каталог товаров</title>
 	</head>
-
 	<body>
+		<header class="page-header">
+			<nav class="main-nav">
+				<a class="main-nav__logo" href="index.html">
+					<img class="main-nav__logo-img" src="#" width="86" height="35" alt="Логотип Мишка">
+				</a>
+				<button class="main-nav__toggle" type="button">
+					открыть меню
+				</button>
+				<div class="main-nav__wrapper">
+
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item">
+							<a class="site-list__link" href="catalog.html">Каталог товаров</a>
+						</li>
+						<li class="site-list__item">
+							<a class="site-list__link" href="form.html">Вязание на заказ</a>
+						</li>
+					</ul>
+
+					<ul class="main-nav__list user-search">
+						<li class="user-search__item">
+							<a class="user-search__link" href="#">Поиск по сайту</a>
+						</li>
+					</ul>
+
+					<ul class="main-nav__list user-basket">
+						<li class="user-basket__item">
+							<a class="user-basket__link" href="#">
+								Корзина: пока пуста
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+		</header>
+
+		<main class="page-catalog">
+
+			<ul class="page-main__list breadcrumbs">
+				<li class="breadcrumbs__items">
+					<a class="breadcrumbs__link" href="#">Новые поступления</a>
+				</li>
+				<li class="breadcrumbs__items">
+					<a class="breadcrumbs__link" href="#">Распродажа</a>
+				</li>
+				<li class="breadcrumbs__items">
+					Бесплатная доставка по России
+				</li>
+			</ul>
+
+			<h1 class="page-catalog__title">
+				Каталог товаров
+			</h1>
+
+			<section class="catalog">
+				<h2 class="visually-hidden">Знакомьтесь ,наши товары</h2>
+				<ul class="catalog__list product__list">
+
+					<li class="product__item">
+						<a class="product__link-wrapper" href="#">
+							<img class="product__link-img" width="316" height="462" src="#" alt="Изображение зайчика-попрыгайчика">
+						</a>
+
+						<p class="product__wrapper">
+							<a href="" class="product__wrapper-link">
+								<h3 class="product__wrapper-title">Зайчик-попрыгайчик</h3>
+							</a>
+							<p class="product__wrapper-parametr">
+								Рост 30 см, вес 200 г
+							</p>
+							<b class="product__wrapper-price product__wrapper-price--basket">1 200 руб.</b>
+						</p>
+					</li>
+
+					<li class="product__item">
+						<a class="product__link-wrapper" href="#">
+							<img class="product__link-img" width="316" height="462" src="#" alt="Изображение Корзинки для белья">
+						</a>
+
+						<p class="product__wrapper">
+							<a class="product__wrapper-link" href="#">
+								<h3 class="product__wrapper-title">
+									Корзинка для белья
+								</h3>
+							</a>
+							<p class="product__wrapper-parametr">
+								Диаметр 15 см, высота 10 см
+							</p>
+							<b class="product__wrapper-price product__wrapper-price--basket">690 руб.</b>
+						</p>
+					</li>
+
+					<li class="product__item">
+						<a class="product__link-wrapper" href="#">
+							<img class="product__link-img" width="316" height="462" src="#" alt="Изображение Большой корзинки
+для игрушек">
+						</a>
+
+						<p class="product__wrapper">
+							<a class="product__wrapper-link" href="#">
+								<h3 class="product__wrapper-title">
+									Большая корзинка
+									для игрушек
+								</h3>
+							</a>
+							<p class="product__wrapper-parametr">Диаметр 30 см, высота 30 см</p>
+							<b class="product__wrapper-price product__wrapper-price--basket">1 500 руб.</b>
+						</p>
+					</li>
+
+				</ul>
+
+			</section>
+
+			<section class="manufacturing-process">
+				<img class="process__video" src="#" alt="Процесс создания">
+				<p class="process__description">
+					<h3 class="process__title process__title--image">
+						Процесс
+						производства
+					</h3>
+					<p class="process__text">
+						По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+					</p>
+					<a class="procces__link button" href="#">Сделать заказ</a>
+				</p>
+			</section>
+
+
+			
+		</main>
+
 		
+		<footer class="page-footer">
+
+			<div class="page-footer__logo">
+				<img class="page-footer__logo-image" width="102" height="34" src="#" alt="Логотип Мишка">
+			</div>
+
+			<div class="page-footer__social">
+
+				<ul class="page-footer__list social-list">
+
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--instagram" href="#">мы в инстаграмме</a>
+					</li>
+
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--facebook" href="#">мы в фейсбуке</a>
+					</li>
+
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--twitter" href="#">мы в твиттере</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright">
+				<b class="page-footer__dev page-footer__dev--icon">Разработано</b>
+			</div>
+		</footer>
+
+		<section class="modal-popup popup-basket">
+			<h2 class="popup__title">Добавить в корзину</h2>
+			<p class="popup__call">Выберите размер:</p>
+			<ul class="popup__list size">
+
+				<li class="size__item">
+					<a href="" class="size__link">s</a>
+				</li>
+
+				<li class="size__item">
+					<a href="" class="size__link">m</a>
+			</li>
+
+				<li class="size__item">
+					<a href="" class="size__link">l</a>
+			</li>
+
+			</ul>
+			<a class="popup__link button" href="#">добавить</a>
+		</section>
 	</body>
 </html>
